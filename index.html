@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        .navbar {
+            background-color: rgb(61, 51, 51);
+        }
+
+        .main {
+            background-color: rgb(117, 84, 84);
+        }
+        .left {
+            background-color:  rgb(117, 84, 84);
+        }
+
+        .footer {
+            background-color:  rgb(61, 51, 51);
+        }
+        
+        /* phone layout */
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+                text-align:center
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .main {
+                grid-column: 1/13;
+                grid-row: 4/10;
+            }
+
+            .left {
+                grid-column: 1/13;
+                grid-row: 1/4;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+        }
+        /* tablet view - layout */
+        @media only screen and (min-width: 601px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+                text-align:center
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .main {
+                grid-column: 1/13;
+                grid-row: 5/11;
+            }
+
+            .left {
+                grid-row: 2/5;
+                grid-column: 1/13;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 11/11;
+            }
+        }
+ /* desktop/laptop layout */
+        @media only screen and (min-width: 992px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+                text-align:center
+                
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .left {
+                grid-column: 1/4;
+                grid-row: 2/10;
+            }
+
+            .main {
+                grid-column: 4/13;
+                grid-row: 2/10;
+                
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Personal Profile</h1>
+        </div>
+
+        <div class="main">
+        <h4>Short Introduction</h4>
+            <p4>Hello, I am Trexia Ann S. Soriano a professional programmer . A programmer with 7 years experience developing software system leading restructurings of several platforms components, enhancing speed,performance as well as other key metrics.</p4>
+                <h4>Skills</h4>
+                    <li>Programmer</li>
+                    <li>Web Designer</li>
+                <h4>Hobbies</h4>
+                    <li>Typing</li>
+                    <li>Blogging</li>
+                    <li>Gaming</li>
+                <h4>Educational Background</h4>
+                    <li>New York University-1998</li>
+                    <li>Canada Science Oriented National HIgh School-2004</li>
+                    <li>B.S. in Computer Science, Anytown University, Anytown, CA - 2007</li>
+                <h4>Future Plan/ Goals</h4>
+                <p4>Get Certified</p4>
+                
+        </div>
+
+        <div class="left">
+                <img src="image/treng,jpg.jpg" alt="" >
+                <h4>Trexia Ann S. Soriano</h4>
+                <h4>37 y/o</h4>
+                <h4>trexiaann30@gmail.com</h4>
+                <h4>09303275228</h4>
+
+        </div>
+        
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
